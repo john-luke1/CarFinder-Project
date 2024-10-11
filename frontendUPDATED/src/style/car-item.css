@@ -1,0 +1,157 @@
+/* Base styles for car items */
+.car_item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.car_img img {
+    border-radius: 5px;
+}
+
+.car_item-content {
+    padding: 10px 0;
+}
+
+.section_title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.car_price {
+    font-size: 1.2rem;
+    color: #28a745;
+}
+
+.dealer_under {
+    font-size: 1rem;
+    color: #666;
+}
+
+.car_item-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    color: black;
+}
+
+.car_item-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+    justify-content: center;
+    color: #555;
+}
+
+.car_item-info span i {
+    color: rgb(10, 118, 206);
+    font-size: 1.1rem;
+    display: flex;
+}
+
+.car_item-btn {
+    border-radius: 0;
+    border: none;
+    outline: none;
+    background: rgb(96, 52, 98);
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.car_item-btn a {
+    color: rgb(235, 237, 240);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.car_item-btn a:hover {
+    color: rgb(96, 44, 216);
+}
+
+.car_item-details {
+    background: rgb(143, 37, 213);
+    border-radius: 0px 4px 4px 0px;
+}
+
+.car_btn-details {
+    color: blueviolet;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.car_btn-details a {
+    color: rgb(236, 232, 240);
+    text-decoration: none;
+}
+
+.section_title1 {
+    color: rgb(139, 5, 5);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .car_item {
+        padding: 15px;
+    }
+
+    .section_title {
+        font-size: 1.3rem;
+    }
+
+    .car_price {
+        font-size: 1.1rem;
+    }
+
+    .dealer_under {
+        font-size: 0.9rem;
+    }
+
+    .car_item-btn {
+        padding: 8px 0;
+    }
+    .car_item-info span{
+        font-size: 0.8rem;
+    }
+    .car_item-info span i{
+        font-size: 0.7rem;
+        justify-content: spac-between;
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .car_item {
+        padding: 10px;
+    }
+
+    .section_title {
+        font-size: 1.2rem;
+    }
+
+    .car_price {
+        font-size: 1rem;
+    }
+
+    .dealer_under {
+        font-size: 0.8rem;
+    }
+
+    .car_item-btn {
+        padding: 6px 0;
+    }
+    .car_item-info span{
+        font-size: 0.7rem;
+    }
+    .car_item-info span i{
+        font-size: .9rem;
+        justify-content: space-between;
+    }
+}

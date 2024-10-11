@@ -1,0 +1,155 @@
+/* Base styles for car items */
+.model_item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.mode_img img {
+    border-radius: 5px;
+}
+
+.model_item-content {
+    padding: 10px 0;
+}
+
+.section_title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.model_price {
+    font-size: 1.2rem;
+    color: #28a745;
+}
+
+.model_under {
+    font-size: 1rem;
+    color: #666;
+}
+
+.model_item-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.model_item-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+    justify-content: center;
+    color: #555;
+}
+
+.model_item-info span i {
+    color: rgb(10, 118, 206);
+    font-size: 1.1rem;
+    display: flex;
+}
+
+.model_item-btn {
+    border-radius: 0;
+    border: none;
+    outline: none;
+    background: rgb(96, 52, 98);
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.model_item-btn a {
+    color: rgb(235, 237, 240);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.model_item-btn a:hover {
+    color: rgb(96, 44, 216);
+}
+
+.model_item-details {
+    background: rgb(143, 37, 213);
+    border-radius: 0px 4px 4px 0px;
+}
+
+.model_btn-details {
+    color: blueviolet;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.model_btn-details a {
+    color: rgb(236, 232, 240);
+    text-decoration: none;
+}
+
+.section_title1 {
+    color: rgb(139, 5, 5);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .model_item {
+        padding: 15px;
+    }
+
+    .section_title {
+        font-size: 1.3rem;
+    }
+
+    .model_price {
+        font-size: 1.1rem;
+    }
+
+    .model_under {
+        font-size: 0.9rem;
+    }
+
+    .model_item-btn {
+        padding: 8px 0;
+    }
+    .model_item-info span{
+        font-size: 0.8rem;
+    }
+    .model_item-info span i{
+        font-size: 0.7rem;
+        justify-content: spac-between;
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .model_item {
+        padding: 10px;
+    }
+
+    .section_title {
+        font-size: 1.2rem;
+    }
+
+    .model_price {
+        font-size: 1rem;
+    }
+
+    .model_under {
+        font-size: 0.8rem;
+    }
+
+    .model_item-btn {
+        padding: 6px 0;
+    }
+    .model_item-info span{
+        font-size: 0.7rem;
+    }
+    .model_item-info span i{
+        font-size: .9rem;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,135 @@
+/* dealer-item.css */
+
+.dealer_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.dealer_item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.all_btn{
+  color: #007bff;
+}
+
+.dealer_img {
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.dealer_img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.dealer_item-content {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.section_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.dealer_under {
+  font-size: 1rem;
+  color: #666;
+  margin: 8px 0 16px 0;
+}
+
+.dealer_item-btn {
+  margin-top: auto;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dealer_item-btn:hover {
+  background-color: #bf2bc1;
+}
+
+.dealer_item-btn a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .section_title {
+    font-size: 1.15rem;
+  }
+
+  .dealer_under {
+    font-size: 0.95rem;
+  }
+
+  .dealer_item-btn {
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section_title {
+    font-size: 1.1rem;
+  }
+
+  .dealer_under {
+    font-size: 0.9rem;
+  }
+
+  .dealer_item-btn {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_title {
+    font-size: 1.05rem;
+  }
+
+  .dealer_under {
+    font-size: 0.85rem;
+  }
+
+  .dealer_item-btn {
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section_title {
+    font-size: 1rem;
+  }
+
+  .dealer_under {
+    font-size: 0.8rem;
+  }
+
+  .dealer_item-btn {
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,97 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+/* Base Style*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans 3', sans-serif;;
+
+}
+
+/* pre define css*/
+
+h1,h2,h3,h4,h5,h6{
+  color: rgb(62, 5, 96);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+h3,h4{
+  font-size: 1.8rem;
+}
+h5,h6{
+  font-size: 1.3rem;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color:rgb(249, 249, 249);
+}
+
+ul{
+  margin: 0;
+  list-style: none;
+
+}
+
+.section_title{
+  color: rgb(39, 38, 39);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.section_subtitle{
+  color: rgb(23, 140, 202);
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-display: none;
+
+}
+
+.section_description{
+  color: gray;
+  font-size: 1rem;
+  line-height: 30px;
+
+
+}
+
+section {
+  padding: 50px 0px;
+
+}
+
+.btn{
+  padding: 7px 15px;
+  background: rgb(245, 245, 250);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color:rgb(96, 9, 125);
+  background: pink;
+
+}
+
+@media only screen and (max-width:768px) {
+  section{
+    padding: 30px 0px;
+  }
+  .section_title{
+    font-size: 1.6rem;
+  }
+  .section_subtitle{
+    font-size: 1.1rem;
+  }
+}

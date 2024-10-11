@@ -1,0 +1,166 @@
+.model_main-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.model_title {
+    color: rgb(19, 18, 18);
+    font-weight: 500;
+    margin-top: 2px;
+}
+.delear {
+    margin-top: 20px; 
+    display: flex;
+    gap: 13rem; 
+  }
+  
+  .delear span {
+    color: black; 
+    font-size: 16px; 
+  }
+  
+  .delear i {
+    color: rgb(197, 101, 245);
+  }
+  
+.model_price {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.model_price span {
+    color: rgb(236, 22, 236);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.category {
+    font-weight: 500;
+    color: rgb(130, 11, 132);
+    display: flex;
+    align-items: center;
+    column-gap: 0.1rem;
+}
+
+.category span {
+    padding: 3px 7px;
+}
+
+.top_descr {
+    margin-top: 20px;
+}
+
+.description {
+    color: gray;
+}
+
+
+.contact-button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: rgb(197, 101, 245); 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .contact-button:hover {
+    background-color: purple; 
+  }
+  
+
+/* Media queries for responsiveness */
+
+@media (max-width: 1200px) {
+    .model_main-img {
+        justify-content: center;
+    }
+
+    .model_price span {
+        font-size: 1.2rem;
+    }
+
+    .category span {
+        padding: 2px 5px;
+    }
+}
+
+@media (max-width: 992px) {
+    .model_price {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .model_price span {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+   .model_main{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   
+    .model_title {
+        font-size: 1.2rem;
+    }
+
+    .model_price {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .model_price span {
+        font-size: 1rem;
+    }
+
+    .category {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .category span {
+        padding: 2px 4px;
+    }
+}
+
+@media (max-width: 576px) {
+    .model_main-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .model_title {
+        font-size: 1rem;
+    }
+
+    .model_price {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .model_price span {
+        font-size: 0.9rem;
+    }
+
+    .category {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category span {
+        padding: 1px 3px;
+    }
+
+    .top_descr {
+        margin-top: 10px;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}

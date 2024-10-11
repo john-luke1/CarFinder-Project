@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bg-login{
+    background-color: rgb(75, 0, 62);
+    height: 100vh;
+    width: 100vw;
+
+}
+.form-login{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.form-login{
+    height: 50vh;
+    width: 100%;
+    padding: 50px;
+}
+.alert-msg {
+    text-align: center;
+    color: red;
+}
+.login-form{
+    background-color: white;
+    border-radius: 20px;
+    margin: 0% 14% 4% 14%;
+    
+}
+.side-image{
+    background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+    url("../assests/all-images/sliders-img/slider-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 20px 20px 0;
+    width: 100%;
+    height: 30rem;
+    padding: 140px 0px 130px 0px;
+    visibility: visible;
+    
+}
+.title-login{
+    text-align: center;
+}
+.title-image{
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
+}
+.form-container-login{
+    height: 100%;
+    padding: 9rem 0px 14rem 0px;
+}
+.form h1{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border-color: blueviolet;
+}
+.btn-login{
+    margin-top: 1rem;
+    height: 3rem;
+    width: 100%;
+    border-radius: 20px;
+    border-color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                font-weight 0.3s ease;
+}
+.title p{
+    text-align: center;
+}
+
+.btn-login:hover{
+    background-color: rgb(0, 42, 179);
+    color: white;
+    font-weight: bold;
+}
+.link{
+    text-decoration: none;
+    color:  rgb(75, 0, 62);
+    transition: color 0.1s ease, font-weight 0.2s ease;
+}
+.link:hover{
+    color: rgb(0, 37, 160);
+    font-weight: bold;
+}
+@media only screen and (max-width: 1000px) {
+    .side-image{
+        visibility: hidden;
+    }
+
+    .login-signup-form{
+        width: 50%;
+    }
+  }

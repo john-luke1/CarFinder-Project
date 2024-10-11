@@ -1,0 +1,49 @@
+.footer {
+    background:  #550680;
+    padding-top: 5px;
+    padding-bottom: 15px; 
+  }
+  .Logo-footer{
+    width: 50px;
+    height: 50px;
+
+  }
+  .footer__logo i {
+    color: #fff;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .footer__logo a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .footer__logo-content {
+    color: rgba(255, 255, 255, 0.715);
+    margin-top: 15px;
+    line-height: 30px;
+  }
+  
+  .footer__link-title {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .office__info {
+    color: rgba(255, 255, 255, 0.715);
+    font-weight: 300;
+    font-size: 1rem;
+    
+  }
+  
+  
+  .footer__bottom {
+    border-top: 1px solid #f6f4f8;
+    color: white;
+    
+  }
+  
+
+ 

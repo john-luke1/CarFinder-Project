@@ -1,0 +1,105 @@
+.brand_item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 92%;
+    margin-top: 70px;
+    margin-left: -10px;
+}
+.brand_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand_img {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.brand_img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.brand_img img:hover {
+    transform: scale(1.05);
+}
+
+.brand_item-btn {
+    background: #550680;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0.9rem;
+    margin-top: 2px;
+    display: flex;
+}
+
+.brand_item-btn:hover {
+    background: #743aa7;
+}
+.section_title {
+    font-size: 1.5rem;
+    font-weight: bold; 
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.brand_description {
+    font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #5f5c5c;
+  margin: 10px 10px;
+  text-align: justify;
+}
+.brand_btn-details a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+    .brand_item {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    
+    .brand_item-btn {
+        padding: 10px 4px;
+        display: flex;
+        font-size: 1rem;
+    }
+    
+    .brand_img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    .brand_item {
+        margin-bottom: 2px;
+        padding: 10px ;
+        margin-top: 30px;
+    }
+    
+    .brand_item-btn {
+        padding:3px 2px;
+        display: flex;
+        font-size: 1rem;
+    }
+    
+    .brand_img img {
+        width: 100%;
+        height: auto;
+    }
+}
