@@ -11,38 +11,46 @@ const FindForm = () => {
   const [maxPrice, setMaxPrice] = useState("");
   const [filteredCars, setFilteredCars] = useState([]);
   const [showWarning, setShowWarning] = useState(false);
+  const [showResults, setShowResults] = useState(false);
 
 
+    // Function to handle changes in the minimum price input
   const handleMinPriceChange = (e) => {
     const value = e.target.value;
     setMinPrice(value);
-    setShowWarning(false); 
-    filterCars(value, maxPrice);
-    
+    setShowWarning(false);
+    if (value === "" && maxPrice === "") {
+      setShowResults(false);
+    }
   };
 
   const handleMaxPriceChange = (e) => {
     const value = e.target.value;
     setMaxPrice(value);
-    setShowWarning(false); 
-    filterCars(minPrice, value);
+    setShowWarning(false);
+    if (minPrice === "" && value === "") {
+      setShowResults(false);
+    }
   };
 
- 
   const parsePrice = (price) => {
     return parseFloat(price.replace(/,/g, ''));
   };
 
-  const filterCars = (minPrice, maxPrice) => {
+ 
+
+    const filterCars = (minPrice, maxPrice) => {
     const min = minPrice ? parsePrice(minPrice) : null;
     const max = maxPrice ? parsePrice(maxPrice) : null;
 
-    if (min === null && max === null) {
-      setFilteredCars([]);
+
+    if (min === null && max === null) { 
+      setFilteredCars([]); 
       return;
     }
 
     const allCarData = [...carData, ...modelData];
+
 
     const filtered = allCarData.filter((car) => {
       const price = parsePrice(car.price);
@@ -51,6 +59,7 @@ const FindForm = () => {
       return matchesMinPrice && matchesMaxPrice;
     });
 
+
     const sortedFilteredCars = filtered.sort((a, b) => {
       return parsePrice(a.price) - parsePrice(b.price);
     });
@@ -58,6 +67,7 @@ const FindForm = () => {
     setFilteredCars(sortedFilteredCars);
   };
 
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!minPrice && !maxPrice) {
@@ -66,6 +76,7 @@ const FindForm = () => {
     }
     setShowWarning(false);
     filterCars(minPrice, maxPrice);
+    setShowResults(true);
   };
 
   return (
@@ -104,7 +115,7 @@ const FindForm = () => {
         </Alert>
       )}
 
-{filteredCars.length > 0 && (
+{showResults && filteredCars.length > 0 && (
         <div className="results">
           <h3>Available Cars</h3>
           <ul>
@@ -127,7 +138,7 @@ const FindForm = () => {
         </div>
       )}
 
-      {filteredCars.length === 0 && (minPrice || maxPrice) && (
+{showResults && filteredCars.length === 0 && (minPrice || maxPrice) && (
         <div className="no-results">No cars found in this price range.</div>
       )}
     </Container>
